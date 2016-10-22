@@ -1,0 +1,33 @@
+<section class="container">
+	<progress-bar progress="progressValue1"></progress-bar>
+
+	<progress-bar progress="progressValue2"></progress-bar>
+
+	<progress-bar progress="progressValue3"></progress-bar>
+
+
+	<div class="form-inline">
+
+		<div class="form-group">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="true">
+    #Progress {{selectedProgressBar}}
+    <span class="caret"></span>
+  </button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a ng-click="setProgressBar(1)">#Progress 1</a></li>
+					<li><a ng-click="setProgressBar(2)">#Progress 2</a></li>
+					<li><a ng-click="setProgressBar(3)">#Progress 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<button class="btn btn-default" type="button" ng-click="btnClicked(-10)">-10</button>
+			<button class="btn btn-default" type="button" ng-click="btnClicked(-25)">-25</button>
+			<button class="btn btn-default" type="button" ng-click="btnClicked(10)">+10</button>
+			<button class="btn btn-default" type="button" ng-click="btnClicked(25)">+25</button>
+		</div>
+	</div>
+</section>
