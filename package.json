@@ -26,7 +26,7 @@
 		"grunt-contrib-watch": "latest"
 	},
 	"scripts": {
-		"postinstall": "bower install && grunt setup",
+		"postinstall": "bower install && grunt",
 		"prestart": "npm install",
 		"start": "http-server -a localhost -p 9000 -c-1 ./dist",
 		"pretest": "npm install",
