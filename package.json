@@ -5,7 +5,9 @@
 	"license": "ISC",
 	"dependencies": {
 		"http-server": "^0.9.0",
-		"bower": "^1.7.7"
+		"bower": "^1.7.7",
+		"grunt": "~0.4.4",
+		"grunt-cli": "latest"
 	},
 	"devDependencies": {
 		"bower": "^1.7.7",
@@ -22,11 +24,10 @@
 		"grunt-contrib-copy": "latest",
 		"grunt-contrib-concat": "latest",
 		"grunt-contrib-uglify": "latest",
-		"grunt-contrib-clean": "latest",
-		"grunt-contrib-watch": "latest"
+		"grunt-contrib-clean": "latest"
 	},
 	"scripts": {
-		"postinstall": "bower install && grunt",
+		"postinstall": "bash ./post_install.sh",
 		"prestart": "npm install",
 		"start": "http-server -a localhost -p 9000 -c-1 ./dist",
 		"pretest": "npm install",
